@@ -2,32 +2,32 @@
   padding: 50px;
   display: flex;
   align-items: center; 
-  justify-content: space-between;
+  justify-content: flex-start; 
   color: var(--text-color);
   gap: 50px;
-  border-top:1px dashed var(--text-color);
+  border-top: 1px dashed var(--text-color);
   position: relative;
 }
-#about .dashedborder{
+
+#about .dashedborder {
   position: absolute;
   left: 50%;
   top: -11px;
-  }
-  
+}
+
 .image-container {
-  display: flex;
-  justify-content: center;
+  flex: 0 0 50%; 
 }
 
 .image-container img {
-  width: 80%;
-  max-width: 509px; 
+  width: 100%;
+  max-width: 400px;  
 }
 
 .skills {
   display: flex;
   flex-direction: column;
-  gap: 30px; 
+  gap: 30px;
 }
 
 .skill {
@@ -96,14 +96,20 @@
   border-radius: 50%;
 }
 
+
 @media (max-width: 768px) {
   #about {
     align-items: center;
     flex-direction: column;
   }
-  
+
+  .image-container {
+    flex: 0 0 70%; 
+  }
+
   .image-container img {
-    width: 60%;
+    width: 80%; 
+    max-width: 400px;
   }
 
   .skill {

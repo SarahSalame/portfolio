@@ -44,7 +44,7 @@ return (
                 </div>
                 <div>
                   <p>Email me</p>
-                  <span>sarahsalame93@gmail.com</span>
+                  <span>sarahsalame39@gmail.com</span>
                 </div>
               </div>
               <div>

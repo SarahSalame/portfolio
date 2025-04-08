@@ -108,6 +108,9 @@
         text-align: center;
         line-height: 1.4;
     }
+    #myprojects .goto-github{
+        margin-top: 10px;
+    }
     
     #myprojects .titleSection h1,
     #myprojects .titleSection span {
