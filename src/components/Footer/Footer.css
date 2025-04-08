@@ -1,0 +1,37 @@
+footer{
+    margin: 0 68px;
+    margin-top: 94px;
+    border-top: 1px solid #BEC0BF;
+    color: var(--text-color);
+}
+footer .footercontainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px;
+}
+footer .mysocial{
+    display: flex;
+    gap: 16px;
+    .github{
+        width:25px ;
+        height: 25px;
+        border-radius: 50%;
+        background-color: #0c96e2;
+        fill: #fff;
+        padding: 2px;
+        font-size: 6px;
+    }
+}
+@media (max-width: 768px) {
+    footer{
+        margin: 0 20px;
+        margin-top: 50px;
+    }
+    footer .footercontainer{
+        flex-direction: column;
+        gap: 16px;
+        padding: 20px;
+    }
+}

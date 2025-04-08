@@ -1,0 +1,147 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    color: var(--text-color);
+  }
+  
+  .contact > div:first-child {
+    > span {
+      color: var(--active-);
+      font-size: 20px;
+      font-weight: 500;
+    }
+  
+    p {
+      font-size: 40px;
+      font-weight: 600;
+  
+      span {
+        color: var(--active-);
+      }
+    }
+  }
+  
+  .contact > div:last-child {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+  
+    .myInfo {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 35%;
+  
+      > div {
+        padding: 24px;
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+        gap: 20px;
+  
+        div:first-child {
+          border-radius: 8px;
+          height: 56px;
+          width: 60px;
+          background-color: var(--active-);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+  
+        p {
+          color: #92929d;
+        }
+  
+        span {
+          font-weight: 500;
+          color: var(--text-color);
+        }
+      }
+    }
+  
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      width: 60%;
+      justify-content: space-between;
+      gap: 24px;
+  
+      input,
+      textarea {
+        padding: 16px;
+        border: 1px solid #bec0bf;
+        background-color: transparent;
+        width: 48%;
+        border-radius: 8px;
+        color: var(--text-color);
+      }
+  
+      textarea {
+        width: 100%;
+        resize: none;
+        height: 170px;
+      }
+  
+      #phoneNumber {
+        width: 100%;
+      }
+  
+      button {
+        font-weight: 500;
+      }
+    }
+    .SendBtn{
+        width: 155px;
+        height: 50px;
+        background-color: #0C96E2;
+        border-radius: 6px;
+        border: none;
+        color: #fff;
+    }
+  }
+  
+  @media (max-width: 1023px) {
+    .contact > div:first-child {
+      text-align: center;
+  
+      p {
+        font-size: 28px;
+      }
+    }
+  
+    .contact > div:last-child {
+      .myInfo {
+        gap: 50px;
+        width: 100%;
+        margin-bottom: 50px;
+  
+        > div {
+          flex-direction: column;
+          padding: 0;
+          text-align: center;
+          width: 100%;
+  
+          div:last-child {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+  
+      form {
+        justify-content: center;
+        width: 100%;
+  
+        input,
+        textarea {
+          width: 100%;
+        }
+      }
+    }
+  }
+  

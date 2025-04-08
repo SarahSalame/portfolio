@@ -1,0 +1,13 @@
+.link-button {
+    padding: 10px;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.link-button.active {
+    color: var(--hover-); 
+    border-bottom: 2px solid var(--hover-); 
+}

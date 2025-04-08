@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+body.light {
+    --nav-color:#ffffffd7;
+    --bg-color-: #ffffff;
+    --text-color: #1d2130;
+    --active-: #0c96e2;
+    --btn-bg-: rgba(255, 255, 255, 0.6);
+    --gradiant-: 1;
+    --hero-content-: #43495b;
+    --hover-: #0988cc;
+    --card-bg-: rgba(245, 245, 245, 0.3);
+    --contact-bg-: url(./assets/images/contactBng.svg);
+  }
+  
+  body.dark {
+    --nav-color:#1b2431af;
+    --bg-color-: #1b2431;
+    --text-color: #ffffff;
+    --active-: #7de0ea;
+    --btn-bg-: #7de0ea;
+    --gradiant-: 0.4;
+    --hero-content-: #ffffff;
+    --hover-: #68c3cd;
+    --card-bg-: transparent;
+    --hero-content-: #ffffff;
+    --contact-bg-: url(./assets/images/contactBg1.svg);
+  }
+  
+  button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+  }
+  .container {
+    max-width: 89vw;
+    margin: 0 auto;
+  }
+  body {
+    background-color: var(--bg-color-);
+    transition: 200ms;
+  }

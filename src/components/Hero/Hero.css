@@ -1,0 +1,143 @@
+#home {
+  position: relative;
+  margin-top: 140px;
+  background-image: url(../../assets/images/Lines.svg);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 30px;
+}
+
+.background-gradient {
+  position: absolute;
+  width: 500px;
+  height: 377px;
+  object-fit: fill;
+  left: 0;
+  bottom: 0;
+  opacity: var(--gradiant-);
+  z-index: -1;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50px;
+  color: var(--text-color);
+}
+
+.hero-content {
+  width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.hero-content h1 {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.hero-content h1 span {
+  font-weight: 400;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: var(--hero-content-);
+  width: 80%;
+  text-align: justify;
+}
+
+.hero-content a {
+  text-decoration: none;
+  border: none;
+  background-color: var(--btn-bg-);
+  color: var(--text-);
+  padding: 12px 23px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.hero-content a:hover {
+  background-color: var(--hover-);
+  color: bisque;
+}
+
+.hero-image {
+  position: relative;
+  width: 420px;
+  height: 440px;
+  background-image: url(../../assets/images/Circle.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.main-img {
+  width: 230px;
+  position: absolute;
+  top: -49px;
+  right: 24%;
+}
+
+.squares-img {
+  position: absolute;
+  top: -20px;
+}
+
+@media (max-width: 1023px) {
+  #home {
+    background: none;
+    margin-top: 100px;
+  }
+
+  .background-gradient {
+    width: 100%;
+  }
+
+  .hero-content {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 25px;
+    line-height: normal;
+  }
+
+  .hero-content p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .squares-img {
+    display: none;
+  }
+
+  .main-img {
+    width: 50%;
+    position: static;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .hero {
+    justify-content: center;
+  }
+
+  .hero-image {
+    width: 60%;
+  }
+}
