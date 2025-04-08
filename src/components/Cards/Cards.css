@@ -55,4 +55,8 @@
       }
     }
   }
-  
+  @media (max-width: 876px) {
+    .cardsContainer{
+      justify-content: center;
+    }
+  }

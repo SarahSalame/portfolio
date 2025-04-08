@@ -11,7 +11,7 @@ const Footer = () => {
             <p>Develpoment by Sarah</p>
             <div className='mysocial'>
                 <a aria-label="sarah's facebook"
-                    href="https://www.facebook.com/profile.php?id=61575042329654">
+                    href="https://www.facebook.com/sarah.salame.75">
                     <img src={facebook} alt='facebook' className='facebook'/>
                 </a>
                 <a aria-label="sarah's linkedin"

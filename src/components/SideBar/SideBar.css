@@ -13,6 +13,9 @@
   align-items: center;
   justify-content: flex-start;
 }
+.menuBtn.active {
+  color: var(--active-);
+}
 
 .Sidebar.show {
   left: 0;

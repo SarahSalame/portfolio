@@ -10,7 +10,9 @@ const SideBar = () => {
 
   return (
     <>
-      <button className="menuBtn" onClick={() => setShow(!show)}>
+      <button  
+      className={`menuBtn ${show ? "active" : ""}`}
+      onClick={() => setShow(!show)}>
         <HiBars3BottomRight />
       </button>
       <div className={`Sidebar ${show ? "show" : ""}`}>
