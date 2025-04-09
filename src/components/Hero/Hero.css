@@ -64,7 +64,7 @@
 
 .hero-content a:hover {
   background-color: var(--hover-);
-  color: bisque;
+  color: #fff;
 }
 
 .hero-image {
@@ -88,7 +88,7 @@
   top: -20px;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1023px) { 
   #home {
     background: none;
     margin-top: 100px;

@@ -24,7 +24,6 @@ export const projects = [
     demoLink: " https://sarahsalame.github.io/My-Blog/",
     libraries: ["React", "React Router"],
     languages: ["HTML", "CSS", "Vanilla Javascript"],
-    framework: [],
     description:
       "An innovative online platform offering comprehensive and in-depth articles on a variety of topics, with a sleek and modern design that seamlessly adapts to different devices and screen sizes, providing a comfortable and engaging reading experience for users.",
   },
@@ -40,7 +39,6 @@ export const projects = [
     demoLink: "https://sarahsalame.github.io/DASHSTACK/",
     libraries: ["React", "React Router"],
     languages: ["HTML", "CSS", "Vanilla Javascript"],
-    framework: [],
     description:
   "DashStack is a dynamic and interactive web application designed for managing products through a responsive admin dashboard. It includes user authentication (sign up, login, logout) and full CRUD operations (create, read, update, delete) for products. Built with React and React Router, it offers a smooth and intuitive user experience.",
   },
@@ -56,7 +54,6 @@ export const projects = [
     demoLink: " https://sarahsalame.github.io/B-World/",
     libraries: ["Fetch API", "LocalStorage"],
     languages: ["HTML", "CSS", "Vanilla Javascript"],
-    framework: [],
     description:
       "A dynamic and responsive web application for book lovers. BookWorld allows users to browse a curated list of books fetched from an external API. Each book card displays key information and includes a View Details button that leads to a detailed page about the selected book",
   },
@@ -72,7 +69,6 @@ export const projects = [
     demoLink: "https://sarahsalame.github.io/posts-management/",
     languages: ["HTML", "CSS", "Vanilla JavaScript"],
     libraries: ["Fetch API", "DOM Manipulation"],
-    framework: [],
     description:
       "A simple post management web app that allows users to add, edit, and delete posts dynamically using vanilla JavaScript and RESTful API integration. Built with HTML, CSS, and JavaScript.",
   },  
@@ -88,7 +84,6 @@ export const projects = [
     demoLink: "https://sarahsalame.github.io/EduPress/",
     libraries: [],
     languages: ["HTML", "CSS", "Vanilla Javascript"],
-    framework: [],
     description:
       "EduPress is a modern and responsive educational website template designed to provide online learning experiences. It features a user-friendly interface, course listings, blog integration, and authentication pages like login and register. The site is built using HTML, CSS, and JavaScript, and includes a responsive navigation menu, a mobile-friendly sidebar, and a structured footer with contact information and social media links.",
   },
@@ -104,7 +99,6 @@ export const projects = [
     demoLink: "https://sarahsalame.github.io/flora/",
     libraries: [],
     languages: ["HTML", "CSS"],
-    framework: [],
     description:
       "A real estate website template designed with HTML and CSS. This project helped me practice responsive layouts, semantic HTML structure, and UI/UX design principles."
   },
@@ -120,7 +114,6 @@ export const projects = [
     demoLink: "https://sarahsalame.github.io/Cozy/",
     libraries: [],
     languages: ["HTML", "CSS", "Vanilla Javascript"],
-    framework: [],
     description:
     "Cozy is a simple and interactive online store built using HTML, CSS, and Vanilla JavaScript. It includes a dynamic product listing, live search functionality, discount handling, and a cart popup that shows selected items with the total price. The project focuses on DOM manipulation and user-friendly UI.",
   },
@@ -136,7 +129,12 @@ const Cards = ({ style }) => {
           </a>
           <p>{project.title}</p>
           <div>
-            <span>{project.languages.join(" - ")}</span>
+          <span>
+              {project.libraries.length > 0
+                  ? project.libraries.join(" - ")
+                  : project.languages.join(" - ")}
+          </span>
+
             <Link
               aria-label="go to project details"
               to={`/project/${project.id}`}

@@ -8,26 +8,25 @@ import "./Contact.css";
 const Contact = () => {
   const { theme } = useContext(ThemeContext);
 
+  const shadowStyle =
+    theme === "light"
+      ? { boxShadow: "0 30px 116px -16px rgba(211, 211, 211, 0.2)" }
+      : {};
+
   return (
     <section id="contact" className="mt">
       <div className="container">
         <div className="contact">
-          <header>
+          <div className="header">
             <span>Contact</span>
             <p>
               Let’s Discuss Your <span>Project</span>
             </p>
-          </header>
+          </div>
 
           <div className="contact-content">
             <div className="myInfo">
-              <div
-                style={
-                  theme === "light"
-                    ? { boxShadow: "0 30px 116px -16px rgba(105, 20, 20, 0.2)" }
-                    : {}
-                }
-              >
+              <div style={shadowStyle}>
                 <div>
                   <img src={phoneIcon} alt="phone" />
                 </div>
@@ -37,7 +36,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div>
+              <div style={shadowStyle} >
                 <div>
                   <img src={emailIcon} alt="email" />
                 </div>
@@ -47,7 +46,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div>
+              <div style={shadowStyle}>
                 <div>
                   <img src={addressIcon} alt="address" />
                 </div>

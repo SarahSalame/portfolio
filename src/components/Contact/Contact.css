@@ -5,24 +5,24 @@
   color: var(--text-color);
 }
 
-.contact > header {
+.contact > .header {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.contact > header > span {
+.contact > .header > span {
   color: var(--active-);
   font-size: 20px;
   font-weight: 500;
 }
 
-.contact > header > p {
+.contact > .header > p {
   font-size: 40px;
   font-weight: 600;
 }
 
-.contact > header > p > span {
+.contact > .header > p > span {
   color: var(--active-);
 }
 
