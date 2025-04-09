@@ -169,11 +169,16 @@
     .project-page {
     height: max-content;
     gap: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
     }
     .icon{
         font-size: 40px;
     }
     .projectdetails {
         gap: 16px;
+    }
+    .project-page .image-container {
+        width: 100%;
     }
 }

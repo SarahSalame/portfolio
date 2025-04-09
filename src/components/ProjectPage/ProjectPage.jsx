@@ -71,12 +71,6 @@ const ProjectPage = () => {
             {project.languages ? project.languages.join(", ") : "No languages specified"}
           </p>
           <p>
-            <span>Framework: </span>
-            {project.framework && project.framework.length > 0
-              ? project.framework.join(", ")
-              : "No frameworks used"}
-          </p>
-          <p>
             <span>Libraries: </span>
             {project.libraries && project.libraries.length > 0
               ? project.libraries.join(", ")
